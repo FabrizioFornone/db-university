@@ -4,7 +4,9 @@ SELECT
 FROM
     `students`
 WHERE
-    YEAR(`date_of_birth`) = '1990' -- 2° query
+    YEAR(`date_of_birth`) = '1990';
+
+-- 2° query
 SELECT
     *
 FROM
@@ -20,7 +22,9 @@ FROM
 WHERE
     YEAR(CURRENT_DATE) - YEAR(`date_of_birth`) > 30
 ORDER BY
-    `date_of_birth` DESC -- 4° query
+    `date_of_birth` DESC;
+
+-- 4° query
 SELECT
     *
 FROM
