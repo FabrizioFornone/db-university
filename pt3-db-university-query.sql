@@ -30,11 +30,11 @@ WHERE
 
 -- 4° query
 SELECT
-    `students`.`surname`,
-    `students`.`name`,
-    `degrees`.`name`,
-    `degrees`.`level`,
-    `departments`.`name`
+    `students`.`surname` AS `Surname`,
+    `students`.`name` AS `Name`,
+    `degrees`.`name` AS `Degree`,
+    `degrees`.`level` AS `Level`,
+    `departments`.`name` AS `Departments`
 FROM
     `students`
     INNER JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id`
